@@ -1,4 +1,10 @@
-import { Wrapper, Title, ButtonsWrapper, Button } from "./HeaderStyles";
+import {
+  Wrapper,
+  Title,
+  ButtonsWrapper,
+  Button,
+  Instructions,
+} from "./HeaderStyles";
 import KeyboardDoubleArrowLeftIcon from "@mui/icons-material/KeyboardDoubleArrowLeft";
 import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import { useRecoilState, useRecoilValue } from "recoil";
@@ -33,7 +39,14 @@ const Header = () => {
   return (
     <Wrapper>
       <Title>typeful</Title>
-      {timerLength > 0 && <Results />}
+      {timerLength > 0 ? (
+        <Results />
+      ) : (
+        <Instructions>
+          Start typing the paragraph below and test your typing speed and
+          accuracy. Good luck!
+        </Instructions>
+      )}
       <ButtonsWrapper>
         <Button onClick={prev}>
           <KeyboardDoubleArrowLeftIcon />

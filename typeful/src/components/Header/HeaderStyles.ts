@@ -12,6 +12,12 @@ export const Title = styled.h1`
   text-decoration-line: underline;
 `;
 
+export const Instructions = styled.div`
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 21px;
+`;
+
 export const ButtonsWrapper = styled.div`
   display: flex;
   justify-content: space-between;
