@@ -81,6 +81,7 @@ const Text = () => {
     setNumKeysPressed(0);
     setNumMistakes(0);
     setTimerLength(0);
+    setIsMistake(false);
   }, [text]);
 
   useEffect(() => {

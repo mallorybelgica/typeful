@@ -14,7 +14,8 @@ background: black
 
 export const Wrapper = styled.div`
   margin: 20px;
-  font-size: 24px;
+  font-size: 28px;
+  letter-spacing: 2px;
   text-align: center;
 `;
 
