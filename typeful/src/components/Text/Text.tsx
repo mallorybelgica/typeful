@@ -8,10 +8,10 @@ const Text = () => {
   const [mistakes, setMistakes] = useState(0);
 
   const handleTextCheck = (ev: KeyboardEvent) => {
-    if (ev.key === texts[0][numChar]) {
+    if (ev.key === text[numChar]) {
       setNumChar(numChar + 1);
     }
-    if (ev.key !== texts[0][numChar]) {
+    if (ev.key !== text[numChar]) {
       setMistakes(mistakes + 1);
     }
   };
