@@ -1,5 +1,9 @@
 import styled, { keyframes } from "styled-components";
 
+interface Props {
+  isMistake?: boolean;
+}
+
 const blink = keyframes`
 from {
     background: white
@@ -14,7 +18,8 @@ export const Wrapper = styled.div`
   text-align: center;
 `;
 
-export const CurrentCharacter = styled.div`
+export const CurrentCharacter = styled.div<Props>`
   display: inline-block;
   animation: ${blink} 0.3s alternate infinite;
+  color: ${(props) => (props.isMistake ? "red" : "#000")};
 `;
