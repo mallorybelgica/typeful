@@ -16,6 +16,9 @@ export const Instructions = styled.div`
   font-size: 20px;
   text-align: center;
   margin-bottom: 21px;
+  @media (max-width: 480px) {
+    font-size: 16px;
+  }
 `;
 
 export const ButtonsWrapper = styled.div`

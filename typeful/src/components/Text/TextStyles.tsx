@@ -17,6 +17,9 @@ export const Wrapper = styled.div`
   font-size: 28px;
   letter-spacing: 2px;
   text-align: center;
+  @media (max-width: 480px) {
+    font-size: 18px;
+  }
 `;
 
 export const CurrentCharacter = styled.div<Props>`
